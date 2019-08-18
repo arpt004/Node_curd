@@ -1,0 +1,30 @@
+<div class=''>
+    <h1 align="center" style="margin: 30px"><u> DashBoard </u> </h1>
+    <h2> Hello {{name1}} </h2>
+    <table class="table table-striped">
+        <thead>
+            <th> Name </th>
+            <th>E-Mail</th>
+            <th>Edit-Delete</th>
+        </thead>
+
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.email}}</td>
+                <td>
+                    <button><a href="/users/{{this._id}}">Edit</a> </button>
+                    <strong>-</strong>
+                    <button><a href="/users/delete/{{this._id}}" 
+                    onclick="return confirm('Are you sure to delete this record ?')">Delete</a> </button> 
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+           <center><button style="margin: 30px; background-color: grey">
+            <a style=" color: white" href="/users/logout">LogOut </button></center> 
+
+</div>

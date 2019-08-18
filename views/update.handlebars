@@ -1,0 +1,21 @@
+   <div style="text-align : center">
+        <h1> Update </h1>
+        <p style="color : green">{{errors}}</p>
+        <form action="" method="post">
+            <label for="Name"> Name </label><br>
+            <input type='text' name="name" placeholder="Enter your Name" value="{{newvar.name}}">
+            <input type='hidden' name="_id" value="{{newvar._id}}">
+            <br><br>
+            <label for="password"> Password </label><br>
+            <input type='password' name="password" placeholder="Enter Password" value="{{newvar.password}}">
+            <br><br>
+            {{!-- <label for="cpassword"> Confirm Password </label><br>
+            <input type='password' name="cpassword" placeholder="Confirm Password" value="{{newvar.password}}"> --}}
+            <br><br><br>
+            <button type="submit">Update</button>
+        </form>
+            <br><br>
+            <button style="background-color: grey">
+            <a style="; color: white" href="/users/dashboard">Go Back</a></button>
+
+    </div>

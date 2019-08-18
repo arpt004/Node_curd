@@ -1,0 +1,28 @@
+npm init  --> package.json
+
+Registery for infy:
+--> npm config set registry http://infynp.ad.infosys.com/repository/npm-group/
+--> npm login http://infynp.ad.infosys.com/repository/npm-group/
+
+npm i express  -> Express
+npm i mongoose  -> MongoDB
+//http://localhost:3000/
+npm i ejs
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+npm install nodemon
+"dev": "nodemon app"  --> package.json in scripts
+npm run dev
+npm i express-ejs-layouts
+
+mongod --dbpath D:\Arpit\Mongo_database
+http://localhost:27017/
+
+npm i express-handlebars
+//app.use(express.static(Path.join(__dirname, 'layouts')));
+
+
+npm install cookie-parser
+npm install express-session
+
+npm i req-flash
